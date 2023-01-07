@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Encriptador</title>
+
+
+</head>
+
+<body>
+    <main>
+        <div class="input">
+            <textarea name="input-area" id="input" placeholder="Ingrese el texto aqui"
+                onkeypress="return (event.charCode >= 97 && event.charCode <= 122)"></textarea>
+
+
+            <div class="buttons">
+                <div class="warning">
+                    <img src="img/warning-logo.png" alt="warning" width="16px" height="16px">
+                    <h4>Solo letras minúsculas y sin acentos</h4>
+                </div>
+                <button type="button" id="encriptador">Encriptar</button>
+                <button type="button" id="desEncriptador">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="output">
+            <div id="img-container">
+                <img src="img/non-content.png" alt="no-content-image">
+                <h1 align="center">Ningún mensaje fue encontrado</h1>
+                <h2 align="center">Ingresa el texto que desees encriptar o desencriptar.</h2>
+            </div>
+            <div class="copy-btn">
+                <button type="button" id="copy">Copiar</button>
+            </div>
+            <h6 align="center">&#169; 2023 Andrés Felipe Bedoya Carvajal</h6>
+
+        </div>
+        </div>
+    </main>
+
+</body>
+<script src="main.js"></script>
+
+</html>

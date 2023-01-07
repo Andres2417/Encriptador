@@ -1,0 +1,244 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e5e5e5;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#encriptador,
+#desEncriptador {
+    background-color: transparent;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+}
+
+#encriptador:hover {
+    background-color: #0a3871;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+#desEncriptador:hover {
+    background-color: #0a3871;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+.input {
+    width: 70%;
+    padding: 30px 30px 0 30px;
+}
+
+#input {
+    width: 100%;
+    height: 65%;
+    padding: 30px;
+    border: none;
+    background-color: transparent;
+    color: #0a3871;
+    resize: none;
+    font-size: 20px;
+}
+#input:focus {
+    outline: none;
+}
+#input::placeholder {
+    color: #0a3871;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.output {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 30%;
+}
+
+#img-container {
+    width: 100%;
+    height: 90%;
+}
+
+#img-container img {
+    height: 250px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 7px;
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+}
+
+.copy-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#copy {
+    background-color: transparent;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    visibility: hidden;
+}
+
+#copy:hover {
+    background-color: #0a3871;
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+#outputText {
+    resize: none;
+    color: #343a40;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    width: 100%;
+    height: 80%;
+}
+#outputText:focus {
+    outline: none;
+    pointer-events: none;
+}
+
+h6 {
+    margin: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: block;
+        width: 100vw;
+        background-color: #f3f5fc;
+    }
+    .input {
+        padding: 30px 0 30px 30px;
+        height: 70%;
+        margin: 0;
+        width: calc(100% - 60px);
+    }
+    #input {
+        width: calc(100% - 30px);
+        height: 75%;
+    }
+
+    #encriptador,
+    #desEncriptador {
+        background-color: transparent;
+        color: #0a3871;
+        border: 1px solid #0a3871;
+        border-radius: 15px;
+        width: calc(50% - 20px);
+        height: 50px;
+    }
+
+    .output {
+        width: calc(100% - 130px);
+        height: calc(100% - 830px);
+        display: block;
+        margin: 0 30px 0 30px;
+    }
+
+    #img-container {
+        width: 100%;
+        margin: 0;
+        height: 70%;
+    }
+
+    #img-container img {
+        display: none;
+    }
+
+    .copy-btn {
+        display: block;
+        width: 100%;
+    }
+    #copy {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        display: block;
+        width: 100vw;
+        background-color: #f3f5fc;
+    }
+    .input {
+        height: 63%;
+        margin: 0;
+        width: calc(100% - 60px);
+    }
+    #input {
+        width: calc(100% - 30px);
+        height: 60%;
+    }
+
+    #encriptador,
+    #desEncriptador {
+        background-color: transparent;
+        color: #0a3871;
+        border: 1px solid #0a3871;
+        border-radius: 15px;
+        width: calc(50% - 5px);
+        height: 50px;
+    }
+
+    .output {
+        margin: 0 10px 0 10px;
+        width: calc(100% - 60px);
+        height: calc(100% - 530px);
+        display: block;
+    }
+
+    #img-container {
+        width: calc(100%);
+        margin: 0;
+        height: 60%;
+    }
+
+    #img-container img {
+        display: none;
+    }
+
+    .copy-btn {
+        display: block;
+        width: 100%;
+    }
+    #copy {
+        width: 100%;
+    }
+}
